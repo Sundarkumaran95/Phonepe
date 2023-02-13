@@ -9,27 +9,10 @@ import matplotlib.pyplot as plot
 
 
 app_title="Phonepe Pulse"
-
-app_sub_title="All India"
-
-
-# [theme]
-# primaryColor="#c874b2"
-# backgroundColor="#210535"
-# secondaryBackgroundColor="#430d4b"
-# textColor="#f5d5e0"
-
-
-
 st.set_page_config(app_title)
 st.title(app_title)
 st.header('Data Visualization and Exploration:')
-st.subheader(app_sub_title)
-
-
-     
 col1, col2 ,col3 = st.columns(3)
-
 with col1:
     option1 = st.selectbox( 
         '', 
