@@ -6,8 +6,6 @@ import plotly.express as px
 import matplotlib.pyplot as plot
 
 
-
-
 app_title="Phonepe Pulse"
 st.set_page_config(app_title)
 st.title(app_title)
@@ -223,7 +221,6 @@ if option1 =='Transactions':
     dfma=pd.DataFrame(fx)
 
     dfma['state_name']=a
-    #print(type(df))
     dfma['state_name'][9]='dadara & nagar havelli'
     dfma['state_name'][11]='andaman & nicobar island'
     dfma.drop(14,axis=0,inplace=True)
