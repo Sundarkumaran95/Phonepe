@@ -1,6 +1,6 @@
 Using Python, Sqlite3, Pandas, Streamlit and Plotly
 
-#Clone the GitHub into our local.
+/nClone the GitHub into our local.
 #Install and Import all needed packeges.
 #Extract the data from Json format pandas dataframe.
 #Cleaning the data
