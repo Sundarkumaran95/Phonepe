@@ -9,7 +9,7 @@ import matplotlib.pyplot as plot
 app_title="Phonepe Pulse"
 st.set_page_config(app_title)
 st.title(app_title)
-st.header('Data Visualization and Exploration:')
+st.header('Phonepe Pulse Data Visualization and Exploration:')
 col1, col2 ,col3 = st.columns(3)
 with col1:
     option1 = st.selectbox( 
@@ -246,7 +246,7 @@ if option1 =='Transactions':
     india_states= json.load(open("C:/Users/A A Sundar/Desktop/guvi/india_state_geo.json","r"))
 
     state_id_map = {}
-    for feature in india_states['features']:
+    for feature in india_states_geo['features']:
         feature['id']=feature['properties']['state_code']
         state_id_map[feature['properties']['st_nm']]=feature['id']
 
@@ -256,7 +256,7 @@ if option1 =='Transactions':
 
     fig=px.choropleth(dfma, 
                     locations='id',
-                    geojson=india_states,
+                    geojson=india_states_geo,
                     color='count',
                     hover_name='state_name',
                     hover_data=['amount'],
@@ -408,7 +408,7 @@ if option1 =='Users':
     india_states= json.load(open("C:/Users/A A Sundar/Desktop/guvi/india_state_geo.json","r"))
 
     state_id_map = {}
-    for feature in india_states['features']:
+    for feature in india_states_geo['features']:
         feature['id']=feature['properties']['state_code']
         state_id_map[feature['properties']['st_nm']]=feature['id']
             
