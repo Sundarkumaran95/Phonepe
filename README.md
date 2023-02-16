@@ -10,7 +10,7 @@ Install and Import all needed packeges.
 
 Extract the data from Json format pandas dataframe.
 
-Export the Json format for analysis and visualization purpose
+Export the CSV format for analysis and visualization purpose
 
 Connect Sqlite3 data base.
 
